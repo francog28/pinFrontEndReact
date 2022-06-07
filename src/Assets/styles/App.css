@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap");
+html {
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; 
+  scroll-behavior: smooth;}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body{
+    margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+
+.css-1bxy6bd-MuiPaper-root-MuiAccordion-root.Mui-expanded{
+    margin:0px 0px;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  height: 4.8rem;
+  z-index: 1000;
+  border-bottom: 1px solid #e0752f; }
+  .header.header--fixed {
+    top: 0;
+    position: fixed;
+    background-color: #e0752f; }
+  .header .logo {
+    height: 1.5rem;
+    width: auto;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 5rem;}
+  .header .container {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0px 7.5px; }
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+  margin: 0px;
+  padding: 5px 0px; }
+  .navbar > ul {
+    margin: 0;
+    padding: 0; }
+    .navbar > ul > li {
+      display: inline-block; }
+      .navbar > ul > li > a {
+        display: block;
+        padding: 38px 16px;
+        font-size: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+        text-align: center;
+        text-decoration: none; }
+
+.section-inicio .slider-item {
+  display: none;
+  height: 100vh;
+  align-items: center;
+  color: #FFFFFF; }
+  .section-inicio .slider-item.slider-item--active {
+    display: flex; }
+  .section-inicio .slider-item.slider-item--first {
+    background-image: url("../Images/slider-1.png");
+    background-size: cover; }
+  .section-inicio .slider-item h2 {
+    font-size: 2.4rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 0px 1.5rem; }
+  .section-inicio .slider-item p {
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+    font-family: 'Roboto';
+    letter-spacing: 1px; }
+  .section-inicio .slider-item a {
+    display: flex;
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #e0752f;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 7.2rem;
+    height: 2.4rem;
+    justify-content: center;
+    align-items: center; }
+
+.section-inicio .sliderNav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 2.5rem;
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 56px; }
+
+.section-inicio .sliderNav .navButton {
+  background: #5F6368;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%; }
+
+.firstSection {
+  display: grid;
+  height: 18.85rem;
+  position: relative;
+  margin: 27.5rem 5.75rem;}
+
+.sectionAbout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+  .sectionAbout .about-content {
+    position: relative;
+    margin: 25px 0px;
+    padding: 15px 0px; }
+  .sectionAbout #aboutRectangle {
+    position: absolute;
+    width: 32px;
+    height: 100%;
+    background-color: #e0752f;
+    top: 0;
+    left: 0; }
+  .sectionAbout h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 44px; }
+    .sectionAbout h2 > span {
+      display: block;
+      color: #e0752f; }
+  .sectionAbout p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.22px;
+    line-height: 28px;
+    color: #343434;
+    margin-right: 0rem; }
+
+.sectionProducts {
+  display: block;
+  height: 100vh;
+  padding-top: 100px;
+  background: linear-gradient(90deg, #f2f4f1 75%, #dce1da 25%);
+  position: relative; }
+
+.productsContent {
+  height: 72vh;
+  width: 70vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  background-image: url("../Images/section3-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end; }
+  .productsContent .productsCards {
+    background-color: #e0752f;
+    width: 34.5%;
+    height: auto;
+    padding: 70px 50px 30px 50px;
+    position: absolute;
+    align-self: flex-end; }
+    .productsContent .productsCards h3 {
+      margin-bottom: 0; }
+    .productsContent .productsCards h2 {
+      font-family: "Poppins";
+      font-weight: 500;
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #FFFFFF; }
+    .productsContent .productsCards p, .productsContent .productsCards h3 {
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 0.8rem;
+      color: #FFFFFF;
+      margin-top: 0px; }
+    .productsContent .productsCards .productsNav {
+      display: flex;
+      justify-content: flex-end;
+      bottom: 0;
+      padding: 17px 0px 0px 0px; }
+      .productsContent .productsCards .productsNav img {
+        padding: 0 5px; }
+
+.sectionServices {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Images/road-man-run-asphalt-jog.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right; }
+  .sectionServices .acordeon {
+    width: 48vw;
+    position: absolute;
+    left: 0;
+    margin-left: 100px; }
+    .sectionServices .acordeon .acordeon-header {
+      background-color: #E3E3E3; }
+    .sectionServices .acordeon .acordeon-button {
+      font-family: 'Roboto';
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #5F6368;
+      background-color: #F8F8F8; }
+    .sectionServices .acordeon .acordeon-body {
+      font-family: 'Roboto';
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #5F6368;
+      margin: 20px 10px; }
+.MuiAccordion{
+  background-color: #E3E3E3;}
+
+.sectionContact {
+  display: grid;
+  height: 100vh;
+  padding-top: 100px;
+  background: linear-gradient(90deg, #f2f4f1 75%, #dce1da 25%);
+  margin-left: 1.5rem;
+  grid-row: 1;
+  grid-column: 1; }
+  .sectionContact h2 {
+    font-family: "Poppins";
+    font-weight: 600; }
+    .sectionContact h2 span {
+      display: block;
+      color: #e0752f; }
+  .sectionContact .contactForm {
+    display: grid;
+    width: 35vw;
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    position: relative; }
+    .sectionContact .contactForm .formInput {
+      display: flex;
+      border-width: 0 0 1px 0;
+      border-color: #5F6368; }
+      .sectionContact .contactForm .formInput input, .sectionContact .contactForm .formInput label {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 9; }
+      .sectionContact .contactForm .formInput input {
+        outline: 0;
+        width: 90%; }
+  .sectionContact .contactImage {
+    width: 40vw;
+    grid-column: 1;
+    grid-row: 2; }
+
+.sectionFooter{
+    display: flex;
+    background-color: #343434;
+    height: 4.8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionFooter p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #DCE1DA;
+    margin: 0;
+    margin-left: 5rem;
+}
+
+.footerLogo{
+    height: 1rem;
+    margin-right: 5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.col-1 {
+  width: 8.33333%;
+  flex: 0 0 auto; }
+
+.col-offset-1 {
+  margin-left: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%;
+  flex: 0 0 auto; }
+
+.col-offset-2 {
+  margin-left: 16.66667%; }
+
+.col-3 {
+  width: 25%;
+  flex: 0 0 auto; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-4 {
+  width: 33.33333%;
+  flex: 0 0 auto; }
+
+.col-offset-4 {
+  margin-left: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%;
+  flex: 0 0 auto; }
+
+.col-offset-5 {
+  margin-left: 41.66667%; }
+
+.col-6 {
+  width: 50%;
+  flex: 0 0 auto; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-7 {
+  width: 58.33333%;
+  flex: 0 0 auto; }
+
+.col-offset-7 {
+  margin-left: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%;
+  flex: 0 0 auto; }
+
+.col-offset-8 {
+  margin-left: 66.66667%; }
+
+.col-9 {
+  width: 75%;
+  flex: 0 0 auto; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-10 {
+  width: 83.33333%;
+  flex: 0 0 auto; }
+
+.col-offset-10 {
+  margin-left: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%;
+  flex: 0 0 auto; }
+
+.col-offset-11 {
+  margin-left: 91.66667%; }
+
+.col-12 {
+  width: 100%;
+  flex: 0 0 auto; }
+
+.col-offset-12 {
+  margin-left: 100%; }
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%; }
+  [class*="col-offset-"] {
+    margin-left: 0; } }
