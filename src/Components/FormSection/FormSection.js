@@ -65,7 +65,7 @@ function FormSection() {
                                      type="text" required
                                      placeholder=""
                                      name="name"
-                                     value={inputs.name || ""}
+                                     value={userInput.name || ""}
                                      onChange={handleChange}
                    
                    ></FormInput>
@@ -75,7 +75,7 @@ function FormSection() {
                                     type="email" required
                                     placeholder=""
                                     name="email"
-                                    value={inputs.email || ""}
+                                    value={userInput.email || ""}
                                     onChange={handleChange}
                     ></FormInput>
                                       <FormLabel htmlFor='for'>Phone</FormLabel>
@@ -84,7 +84,7 @@ function FormSection() {
                                      type="number" 
                                      placeholder=""
                                      name="phone"
-                                     value={inputs.phone || ""}
+                                     value={userInput.phone || ""}
                                      onChange={handleChange}
                    
                    ></FormInput>
@@ -97,7 +97,7 @@ function FormSection() {
                                      id="" 
                                      cols="30" 
                                      rows="2"
-                                     value={inputs.message || ""}
+                                     value={userInput.message || ""}
                                      onChange={handleChange}
                    
                    
