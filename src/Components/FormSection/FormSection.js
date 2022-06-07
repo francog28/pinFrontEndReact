@@ -39,7 +39,7 @@ const FormSection = () => {
   
 
     const saveFormData = async () => {
-      const response = await fetch('', {
+      const response = await fetch('https://backend-laravel-franco.herokuapp.com/', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(inputs),
