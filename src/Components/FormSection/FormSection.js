@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import axios from 'axios'
 import { 
   Container,
   ImgWrap, 
@@ -39,7 +40,7 @@ const FormSection = () => {
   
 
     const saveFormData = async () => {
-      const response = await fetch('https://backend-laravel-franco.herokuapp.com/', {
+      const response = await fetch('https://backend-laravel-franco.herokuapp.com', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(inputs),
@@ -73,14 +74,14 @@ const FormSection = () => {
   return (
     <Container id='contact'>
         <Wrapper>
-                 <FormH1>
+                <FormH1>
                     Get in touch <br />
                     <OrangeTitle>
                         We are hiring!
                     </OrangeTitle>
                 </FormH1>
             <FormContainer>
-                <Form name="Form completo" onSubmit={handleSubmit} >
+                <Form name="Form completo" onSubmit={handleSubmit} method="POST">
 
                    <FormWrapper>
 
