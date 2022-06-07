@@ -34,7 +34,7 @@ function FormSection() {
     const handleSubmit = function (event){
       event.preventDefault()
       axios({
-        url: 'https://backend-laravel-franco.herokuapp.com/api/contacto',
+        url: 'https://backendlaravelfranco.herokuapp.com/api/contact',
         method: 'POST',
         data: userInput
       }).then( result => {
@@ -65,7 +65,7 @@ function FormSection() {
                                      type="text" required
                                      placeholder=""
                                      name="name"
-                                     value={userInput.name || ""}
+                                     value={userInput.name}
                                      onChange={handleChange}
                    
                    ></FormInput>
@@ -75,7 +75,7 @@ function FormSection() {
                                     type="email" required
                                     placeholder=""
                                     name="email"
-                                    value={userInput.email || ""}
+                                    value={userInput.email}
                                     onChange={handleChange}
                     ></FormInput>
                                       <FormLabel htmlFor='for'>Phone</FormLabel>
@@ -84,7 +84,7 @@ function FormSection() {
                                      type="number" 
                                      placeholder=""
                                      name="phone"
-                                     value={userInput.phone || ""}
+                                     value={userInput.phone}
                                      onChange={handleChange}
                    
                    ></FormInput>
@@ -97,7 +97,7 @@ function FormSection() {
                                      id="" 
                                      cols="30" 
                                      rows="2"
-                                     value={userInput.message || ""}
+                                     value={userInput.message}
                                      onChange={handleChange}
                    
                    
