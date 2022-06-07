@@ -290,6 +290,32 @@ img {
     margin-right: 5rem;
 }
 
+@media only screen and (max-width: 768px){
+    #aboutRectangle{
+        display: none;
+    }
+    #contentAbout{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #contentAbout h2{
+            font-size: 1.5rem;
+            margin-top: 100px;
+    }
+    .firstSection h2{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 401px){
+    .section-inicio .slider-item h2{
+        font-size: 1.5rem;
+    }
+    .sliderNav{
+        display: none;
+    }
+}
+
 .row {
   display: flex;
   flex-wrap: wrap; }
