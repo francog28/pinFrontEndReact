@@ -19,56 +19,30 @@ import {
 import ContactBgImage from "../../Assets/Images/contact-image-hq.jpg";
 
 
-const FormSection = () => {
-    const [inputs, setInputs] = useState({});
-   // const [textArea, setTextarea] = useState("");
-    console.log(inputs)
-   // console.log(textArea)
-  
-    const handleChange = (event) => {
-      const name = event.target.name;
-      const value = event.target.value;
-      setInputs(values => ({...values, [name]: value}))
+function FormSection() {
+    const [userInput, setUserInput] = useState({name: "", email: "", phone: "", message: ""})
+    const [showAlert, setShowAlert] = useState(false)
+
+    const handleChange = function (event) {
+      setShowAlert(false)
+      const property = event.target.name
+      const value = event.target.value
+
+      setUserInput({...userInput, [property]: value})
     }
 
-    // const handleTextArea = (event) => {
-     
-    //   const name = event.target.name
-    //   const value = event.target.value
-    //   setTextarea (value);
-    // }
-  
-
-    const saveFormData = async () => {
-      const response = await fetch('https://backend-laravel-franco.herokuapp.com', {
+    const handleSubmit = function (event){
+      event.preventDefault()
+      axios({
+        url: 'https://backend-laravel-franco.herokuapp.com/api/contacto',
         method: 'POST',
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(inputs),
-        //, textArea
-      });
-      if (response.status !== 200) {
-        throw new Error(`Request failed: ${response.status}`); 
-      }
+        data: userInput
+      }).then( result => {
+        setShowAlert(true)
+        setUserInput({nombre: "", email: "", phone: "", mensaje: ""})
+      })
+      .catch( error => console.log(error))
     }
-
-    const handleSubmit = async (event) => {
-      event.preventDefault();
-      try {
-        await saveFormData ()
-        alert("Su mensaje fue enviado. Nos comunicaremos con usted a la brevedad.");
-        setInputs("")
-        //setTextarea("")
-      }
-  
-        catch (event) {
-          alert(`Request failed: ${event.message}`);
-        }
-     }
-
-
-
-
-
 
 
   return (
