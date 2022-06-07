@@ -39,7 +39,7 @@ function FormSection() {
         data: userInput
       }).then( result => {
         setShowAlert(true)
-        setUserInput({nombre: "", email: "", phone: "", mensaje: ""})
+        setUserInput({name: "", email: "", phone: "", message: ""})
       })
       .catch( error => console.log(error))
     }
